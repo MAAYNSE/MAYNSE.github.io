@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #D5DBDB; 
+            color: #333; 
+        }
+        header, footer {
+            background: #154360;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+        }
+        nav {
+            background-color: #616A6B; 
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white; 
+            font-weight: bold; 
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #2e3347; 
+        }
+        .container {
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+            border-radius: 10px; 
+            margin: 2rem auto; 
+            max-width: 800px; 
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .exercise {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #333;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background: #555;
+        }
+        .result {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        iframe {
+            margin-top: 1rem;
+            width: 100%;
+            max-width: 800px;
+            height: 315px; 
+        }
+        .centered-button {
+            display: block;
+            margin: 0 auto;
+        }
+        .logo {
+            width: 80px; 
+            margin-left: 20px; 
+        }
+        .centered-text {
+            text-align: center;
+            flex: 1; 
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <img src="img/log.png" alt="AYNSE Logo" class="logo">
+    </div>
+    <h1 class="centered-text">PASSIVE VOICE - Exercises</h1>
+</header>
+
+<nav>
+    <a href="#ejercicios">Exercises</a>
+    <a href="#writing">Writing</a>
+    <a href="#reading">Reading</a>
+    <a href="#listening">Listening</a>
+</nav>
+
+<div class="container">
+    <section id="ejercicios" class="section">
+        <h2>Exercises</h2>
+        <div class="exercise">
+            <h3>Exercise 1</h3>
+            <p>Transform the following sentences into passive voice:</p>
+            <ol>
+                <li>She writes a letter. <input type="text" id="e1q1" /></li>
+                <li>The chef cooked a delicious meal. <input type="text" id="e1q2" /></li>
+                <li>They will finish the project. <input type="text" id="e1q3" /></li>
+                <li>We are watching a movie. <input type="text" id="e1q4" /></li>
+                <li>The company will launch a new product. <input type="text" id="e1q5" /></li>
+            </ol>
+            <button class="button" onclick="checkExercise1()">Check</button>
+            <div id="e1result" class="result"></div>
+        </div>
+
+        <div class="exercise">
+            <h3>Exercise 2</h3>
+            <p>Complete the sentences in passive voice:</p>
+            <ol>
+                <li>The song <input type="text" id="e2q1" /> (sing) by the artist.</li>
+                <li>The report <input type="text" id="e2q2" /> (finish) tomorrow.</li>
+                <li>The cake <input type="text" id="e2q3" /> (eat) by the kids.</li>
+                <li>The documents <input type="text" id="e2q4" /> (sign) by the manager.</li>
+                <li>The new movie <input type="text" id="e2q5" /> (release) next month.</li>
+            </ol>
+            <button class="button" onclick="checkExercise2()">Check</button>
+            <div id="e2result" class="result"></div>
+        </div>
+    </section>
+
+    <section id="writing" class="section">
+        <h2>Writing</h2>
+        <div class="exercise">
+            <h3>Exercise 1</h3>
+            <p>Write a short paragraph using passive voice about an important historical event.</p>
+            <textarea id="wq1" rows="4" cols="50"></textarea>
+            <button class="button" onclick="checkWriting()">Submit</button>
+            <div id="wresult" class="result"></div>
+        </div>
+    </section>
+
+    <section id="reading" class="section">
+        <h2>Reading</h2>
+        <div class="exercise">
+            <h3>Exercise 1</h3>
+            <p>Read the following passage and identify the sentences in passive voice:</p>
+            <p>"The Declaration of Independence was signed in 1776. It was written by Thomas Jefferson. The document was approved by the Continental Congress."</p>
+            <ol>
+                <li><input type="text" id="rq1" /></li>
+                <li><input type="text" id="rq2" /></li>
+                <li><input type="text" id="rq3" /></li>
+            </ol>
+            <button class="button" onclick="checkReading()">Check</button>
+            <div id="rresult" class="result"></div>
+        </div>
+
+        <div class="exercise">
+            <h3>Exercise 2</h3>
+            <p>Read the following passage and answer the questions:</p>
+            <p>"The Mona Lisa, a famous painting by Leonardo da Vinci, was completed in 1506. It is known for its mysterious smile. The painting was stolen in 1911 and recovered in 1913."</p>
+            <ol>
+                <li>When was the Mona Lisa completed? <input type="text" id="rr2q1" /></li>
+                <li>What is the Mona Lisa known for? <input type="text" id="rr2q2" /></li>
+                <li>When was the painting stolen and recovered? <input type="text" id="rr2q3" /></li>
+            </ol>
+            <button class="button" onclick="checkReading2()">Check</button>
+            <div id="r2result" class="result"></div>
+        </div>
+    </section>
+
+    <section id="listening" class="section">
+        <h2>Listening</h2>
+        <div class="exercise">
+            <h3>Exercise 1 - Metallica: Nothing Else Matters</h3>
+            <iframe src="https://www.youtube.com/embed/ozXZnwYTMbs" frameborder="0" allowfullscreen></iframe>
+            <p>Transform the following lines into passive voice:</p>
+            <ol>
+                <li>Trust I seek and I find in you. <input type="text" id="lq1" /></li>
+                <li>Never opened myself this way. <input type="text" id="lq2" /></li>
+                <li>Life is ours, we live it our way. <input type="text" id="lq3" /></li>
+                <li>Nothin' else matters. <input type="text" id="lq4" /></li>
+                <li>Nothin' else matters. <input type="text" id="lq5" /></li>
+            </ol>
+            <button class="button" onclick="checkListening()">Check</button>
+            <div id="lresult" class="result"></div>
+        </div>
+
+        <button class="button centered-button" onclick="goToFinalTest()">Go to the Final Exam</button>
+    </section>
+</div>
+
+<footer class="centered-text">
+    <p>© 2024 AYNSE Learn and Speak </p>
+</footer>
+
+<script>
+    function checkExercise1() {
+        let result = document.getElementById('e1result');
+        let answers = ["A letter is written by her.", "A delicious meal was cooked by the chef.",
+                       "The project will be finished by them.", "A movie is being watched by us.",
+                       "A new product will be launched by the company."];
+        let userAnswers = [document.getElementById('e1q1').value,
+            document.getElementById('e1q2').value,
+            document.getElementById('e1q3').value,
+            document.getElementById('e1q4').value,
+            document.getElementById('e1q5').value];
+        let correct = 0;
+        for(let i = 0; i < answers.length; i++) {
+            if(userAnswers[i].toLowerCase() === answers[i].toLowerCase()) {
+                correct++;
+            }
+        }
+        result.innerHTML = `You got ${correct} out of ${answers.length} correct.`;
+    }
+
+    function checkExercise2() {
+        let result = document.getElementById('e2result');
+        let answers = ["is sung", "will be finished", "was eaten", "were signed", "will be released"];
+        let userAnswers = [document.getElementById('e2q1').value,
+            document.getElementById('e2q2').value,
+            document.getElementById('e2q3').value,
+            document.getElementById('e2q4').value,
+            document.getElementById('e2q5').value];
+        let correct = 0;
+        for(let i = 0; i < answers.length; i++) {
+            if(userAnswers[i].toLowerCase() === answers[i].toLowerCase()) {
+                correct++;
+            }
+        }
+        result.innerHTML = `You got ${correct} out of ${answers.length} correct.`;
+    }
+
+    function checkWriting() {
+        let result = document.getElementById('wresult');
+        let userAnswer = document.getElementById('wq1').value;
+        result.innerHTML = "Your writing exercise has been submitted.";
+    }
+
+    function checkReading() {
+        let result = document.getElementById('rresult');
+        let answers = ["The Declaration of Independence was signed in 1776.",
+            "It was written by Thomas Jefferson.",
+            "The document was approved by the Continental Congress."];
+        let userAnswers = [document.getElementById('rq1').value,
+            document.getElementById('rq2').value,
+            document.getElementById('rq3').value];
+        let correct = 0;
+        for(let i = 0; i < answers.length; i++) {
+            if(userAnswers[i].toLowerCase() === answers[i].toLowerCase()) {
+                correct++;
+            }
+        }
+        result.innerHTML = `You got ${correct} out of ${answers.length} correct.`;
+    }
+
+    function checkReading2() {
+        let result = document.getElementById('r2result');
+        let answers = ["completed in 1506",
+            "known for its mysterious smile",
+            "stolen in 1911 and recovered in 1913"];
+        let userAnswers = [document.getElementById('rr2q1').value,
+            document.getElementById('rr2q2').value,
+            document.getElementById('rr2q3').value];
+        let correct = 0;
+        for(let i = 0; i < answers.length; i++) {
+            if(userAnswers[i].toLowerCase() === answers[i].toLowerCase()) {
+                correct++;
+            }
+        }
+        result.innerHTML = `You got ${correct} out of ${answers.length} correct.`;
+    }
+
+    function checkListening() {
+        let result = document.getElementById('lresult');
+        let answers = ["Trust is sought and found in you.",
+            "Myself has never been opened this way.",
+            "Forever trusted is who we are.",
+            "Life is lived by us our way.",
+            "Nothin' else matters."];
+        let userAnswers = [document.getElementById('lq1').value,
+            document.getElementById('lq2').value,
+            document.getElementById('lq3').value,
+            document.getElementById('lq4').value,
+            document.getElementById('lq5').value];
+        let correct = 0;
+        for(let i = 0; i < answers.length; i++) {
+            if(userAnswers[i].toLowerCase() === answers[i].toLowerCase()) {
+                correct++;
+            }
+        }
+        result.innerHTML = `You got ${correct} out of ${answers.length} correct.`;
+    }
+
+    function goToFinalTest() {
+        window.location.href = "finaltest.html"; 
+    }
+</script>
+
+</body>
+</html>

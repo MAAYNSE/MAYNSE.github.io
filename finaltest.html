@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Test - PASSIVE VOICE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #D5DBDB; 
+            color: #333; 
+        }
+        
+        header, footer {
+            background: #154360;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        nav {
+            background-color: #616A6B; 
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white; 
+            font-weight: bold; 
+            transition: color 0.3s ease; 
+        }
+        nav a:hover {
+            color: #2e3347; 
+        }
+        
+        .container {
+            padding: 2rem; 
+            background-color: #fff; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+            border-radius: 10px; 
+            margin: 2rem auto; 
+            max-width: 800px; 
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #333;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease; 
+            margin: 0 auto; 
+            display: block; 
+            width: 60%; 
+            max-width: 200px; 
+        }
+        .button:hover {
+            background: #555;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            border: 1px solid #752f2f; 
+            border-radius: 5px; 
+            overflow: hidden; 
+        }
+        th, td {
+            border: 1px solid #16353f; 
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #F0B27A; 
+        }
+        tr:nth-child(even) {
+            background-color: #F6DDCC; 
+        }
+        tr:hover {
+            background-color: #FDEBD0; 
+        }
+
+        .exam {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .exam h3 {
+            color: #333;
+        }
+        .exam p {
+            margin-bottom: 10px;
+        }
+        .exam ol {
+            list-style-type: none;
+            counter-reset: item;
+            padding: 0;
+        }
+        .exam ol li {
+            counter-increment: item;
+            margin-bottom: 10px;
+        }
+        .exam ol li::before {
+            content: counter(item);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .result {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #e0e0e0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .logo {
+            width: 80px; 
+            margin-left: 20px; 
+        }
+        .centered-text {
+            text-align: center;
+            flex: 1; 
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/log.png" alt="AYNSE Logo" class="logo">
+    </div>
+    <h1 class="centered-text">PASSIVE VOICE - Final Test</h1>
+</header>
+
+<nav>
+    <a href="us.html">Meet us</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="index.html">Home</a>
+    
+</nav>
+
+<div class="container">
+    <section id="examen" class="section">
+        <h2>Final Test</h2>
+        
+        <div class="exam">
+            <h3>Section A: Sentence Transformation</h3>
+            <p>Transform the following sentences into passive voice:</p>
+            <ol>
+                <li>"She speaks Spanish fluently." <input type="text" id="exq1" /></li>
+                <li>"The company awarded him a promotion." <input type="text" id="exq2" /></li>
+                <li>"We will finish the project by next Friday." <input type="text" id="exq3" /></li>
+                <li>"The teacher is explaining the lesson right now." <input type="text" id="exq4" /></li>
+                <li>"They have built a new bridge in our town." <input type="text" id="exq5" /></li>
+            </ol>
+        </div>
+
+        <div class="exam">
+            <h3>Section B: Sentence Completion</h3>
+            <p>Complete the following sentences in passive voice:</p>
+            <ol>
+                <li>The letters <input type="text" id="exq6" /> (send) yesterday.</li>
+                <li>This novel <input type="text" id="exq7" /> (write) by a famous author.</li>
+                <li>These old houses <input type="text" id="exq8" /> (demolish) next year.</li>
+                <li>The contract <input type="text" id="exq9" /> (sign) by the CEO tomorrow.</li>
+                <li>English <input type="text" id="exq10" /> (teach) to us by Mrs. Smith.</li>
+            </ol>
+        </div>
+
+        <div class="exam">
+            <h3>Section C: Reading Comprehension</h3>
+            <p>Read the following passage and answer the questions:</p>
+            <p>"The Eiffel Tower, one of the most iconic landmarks in Paris, was designed by engineer Gustave Eiffel. It was completed in 1889 as the entrance arch to the 1889 World's Fair. Today, it is visited by millions of tourists every year."</p>
+            <ol>
+                <li>Who designed the Eiffel Tower? <input type="text" id="exq11" /></li>
+                <li>When was the Eiffel Tower completed? <input type="text" id="exq12" /></li>
+                <li>Why was the Eiffel Tower built originally? <input type="text" id="exq13" /></li>
+            </ol>
+        </div>
+
+        <button class="button" onclick="checkExam()">Submit Answers</button>
+        <div id="exresult" class="result"></div>
+        
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 AYNSE Learn and Speak</p>
+</footer>
+
+<script>
+    function checkExam() {
+        let result = document.getElementById('exresult');
+        let answers = [
+            "Spanish is spoken fluently by her.",
+            "He was awarded a promotion by the company.",
+            "The project will be finished by us by next Friday.",
+            "The lesson is being explained by the teacher right now.",
+            "A new bridge has been built in our town by them.",
+            "were sent",
+            "was written",
+            "will be demolished",
+            "will be signed",
+            "is taught",
+            "Gustave Eiffel",
+            "in 1889",
+            "as the entrance arch to the 1889 World's Fair."
+        ];
+        let userAnswers = [
+            document.getElementById('exq1').value,
+            document.getElementById('exq2').value,
+            document.getElementById('exq3').value,
+            document.getElementById('exq4').value,
+            document.getElementById('exq5').value,
+            document.getElementById('exq6').value,
+            document.getElementById('exq7').value,
+            document.getElementById('exq8').value,
+            document.getElementById('exq9').value,
+            document.getElementById('exq10').value,
+            document.getElementById('exq11').value,
+            document.getElementById('exq12').value,
+            document.getElementById('exq13').value
+        ];
+        let correctCount = 0;
+        for (let i = 0; i < answers.length; i++) {
+            if (userAnswers[i].trim().toLowerCase() === answers[i].toLowerCase()) {
+                correctCount++;
+            }
+        }
+        result.innerHTML = `You got ${correctCount} out of ${answers.length} correct.`;
+    }
+</script>
+
+</body>
+</html>
